@@ -1,63 +1,20 @@
-﻿#include "pch.h"
-#include "system_info.h"
-#include "process_manager.h"
-#include "disk_manager.h"
-#include "network_info.h"
-#include "log_manager.h"
-#include "file_manager.h"
-#include "performance_monitor.h"
-
-void ShowMenu() {
-    std::cout << "PC Management App" << std::endl;
-    std::cout << "1. Show System Info" << std::endl;
-    std::cout << "2. Manage Processes" << std::endl;
-    std::cout << "3. Monitor Disk Usage" << std::endl;
-    std::cout << "4. Show Network Info" << std::endl;
-    std::cout << "5. Monitor Event Logs" << std::endl;
-    std::cout << "6. Manage Files/Directories" << std::endl;
-    std::cout << "7. Monitor Performance" << std::endl;
-    std::cout << "8. Exit" << std::endl;
-}
+﻿#include <iostream>
+#include "admin_tool.h"
 
 int main() {
     int choice;
-    bool running = true;
+    while (true) {
+        displayMenu();  // メニューを表示
+        std::cin >> choice;  // ユーザーの選択を受け取る
+        handleMenuSelection(choice);  // 選択に応じて処理を実行
 
-    while (running) {
-        ShowMenu();
-        std::cout << "Enter your choice: ";
-        std::cin >> choice;
-
-        switch (choice) {
-        case 1:
-            ShowSystemInfo();
-            break;
-        case 2:
-            ManageProcesses();
-            break;
-        case 3:
-            MonitorDiskUsage();
-            break;
-        case 4:
-            ShowNetworkInfo();
-            break;
-        case 5:
-            MonitorEventLogs();
-            break;
-        case 6:
-            ManageFiles();
-            break;
-        case 7:
-            MonitorPerformance();
-            break;
-        case 8:
-            running = false;
-            std::cout << "Exiting..." << std::endl;
-            break;
-        default:
-            std::cout << "Invalid choice! Please try again." << std::endl;
+        // 続けるかどうかを確認
+        std::cout << "\n次の操作を行いますか？ (y/n): ";
+        char continueChoice;
+        std::cin >> continueChoice;
+        if (continueChoice != 'y' && continueChoice != 'Y') {
+            break;  // 'y' または 'Y' 以外なら終了
         }
     }
-
     return 0;
 }

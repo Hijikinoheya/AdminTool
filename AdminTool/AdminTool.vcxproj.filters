@@ -13,57 +13,66 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="ソース ファイル\旧">
+      <UniqueIdentifier>{a0ad7914-d1bd-468a-b034-031aedfca808}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AdminTool.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="system_info.cpp">
+    <ClCompile Include="admin_tool.h">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="process_manager.cpp">
+    <ClCompile Include="admin_tool.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="disk_manager.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="network_info.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="log_manager.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\旧</Filter>
     </ClCompile>
     <ClCompile Include="file_manager.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\旧</Filter>
+    </ClCompile>
+    <ClCompile Include="log_manager.cpp">
+      <Filter>ソース ファイル\旧</Filter>
+    </ClCompile>
+    <ClCompile Include="network_info.cpp">
+      <Filter>ソース ファイル\旧</Filter>
     </ClCompile>
     <ClCompile Include="performance_monitor.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\旧</Filter>
+    </ClCompile>
+    <ClCompile Include="process_manager.cpp">
+      <Filter>ソース ファイル\旧</Filter>
+    </ClCompile>
+    <ClCompile Include="system_info.cpp">
+      <Filter>ソース ファイル\旧</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="performance_monitor.h">
-      <Filter>ソース ファイル</Filter>
+    <ClInclude Include="disk_manager.h">
+      <Filter>ソース ファイル\旧</Filter>
     </ClInclude>
     <ClInclude Include="file_manager.h">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\旧</Filter>
     </ClInclude>
     <ClInclude Include="log_manager.h">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\旧</Filter>
     </ClInclude>
     <ClInclude Include="network_info.h">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\旧</Filter>
     </ClInclude>
-    <ClInclude Include="disk_manager.h">
-      <Filter>ソース ファイル</Filter>
+    <ClInclude Include="performance_monitor.h">
+      <Filter>ソース ファイル\旧</Filter>
     </ClInclude>
     <ClInclude Include="process_manager.h">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\旧</Filter>
     </ClInclude>
     <ClInclude Include="system_info.h">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\旧</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>ソース ファイル\旧</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

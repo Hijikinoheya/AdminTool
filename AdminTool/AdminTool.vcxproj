@@ -109,6 +109,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Iphlpapi.lib;Pdh.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -129,6 +130,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AdminTool.cpp" />
+    <ClCompile Include="admin_tool.cpp" />
+    <ClCompile Include="admin_tool.h" />
     <ClCompile Include="disk_manager.cpp" />
     <ClCompile Include="file_manager.cpp" />
     <ClCompile Include="log_manager.cpp" />
